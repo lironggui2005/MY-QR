@@ -8,7 +8,6 @@
    return navigator.userAgent;
   }
   alipayURL="https://qr.alipay.com/a6x09188sljpbe2kknfkgd5";//从支付宝二维码里得到的URL
-  wechatURL="https://u.wechat.com/MEIwhmupqBjUWy2p5NlyftI";//从微信二维码里得到的URL
   qqURL="http://qm.qq.com/cgi-bin/qm/qr?k=HW5JrinmsoWej7EjMIH_fAiN2_7Prbem";//从qq二维码里得到的URL  
   wechat = "MicroMessenger";
   alipay = "AlipayClient";
@@ -16,7 +15,7 @@
   userAgent = getUA();
   if(userAgent.indexOf(wechat)!=-1){
    //微信
-   window.location.href=wechatURL
+   window.location.href="wechat.png"
   }else if(userAgent.indexOf(qq)!=-1){
    //QQ
    window.location.href=qqURL
