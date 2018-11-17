@@ -8,15 +8,15 @@
    return navigator.userAgent;
   }
   alipayURL="https://qr.alipay.com/a6x09188sljpbe2kknfkgd5";//从支付宝二维码里得到的URL
-  wechatURL="https://u.wechat.com/MJ2jp1UKrtX-v7tfUqzpBwE";//从微信二维码里得到的URL
-  qqURL="http://qm.qq.com/cgi-bin/qm/qr?k=HW5JrinmsoWej7EjMIH_fAiN2_7Prbem";//从qq二维码里得到的URL
+  wechat="https://u.wechat.com/MJ2jp1UKrtX-v7tfUqzpBwE";//从微信二维码里得到的URL
+  qq="http://qm.qq.com/cgi-bin/qm/qr?k=HW5JrinmsoWej7EjMIH_fAiN2_7Prbem";//从qq二维码里得到的URL
   userAgent = getUA();
   if(userAgent.indexOf(wechat)!=-1){
    //微信
-   window.location.href=wechatURL;
+   window.location.href=wechat;
   }else if(userAgent.indexOf(qq)!=-1){
    //QQ
-   window.location.href=qqURL;
+   window.location.href=qq;
   }else if(userAgent.indexOf(alipay)!=-1){
    //支付宝
    window.location.href=alipayURL;
